@@ -63,13 +63,13 @@ def tag_rename(tag):
     """
 
     replacements = {
-            'Neural and Evolutionary Computing':                ['neural computing', 'evolutionary computing'],
-            'Picture and Image Generations':                    ['picture generation', 'image generation'],
-            'Algebras, Linear':                                 ['linear algebra'],
-            'Mathematics / Linear & Nonlinear Programming':     ['mathematics', 'linear programming', 'nonlinear programming'],
+            'structure/agency':                                 ['structure', 'agency'],
+            'inmates/offenders':                                ['inmates', 'offenders'],
+            'over/underrepresentation':                         ['overrepresentation', 'underrepresentation'],
+            'reentry/release':                                  ['reentry', 'release'],
             'Mathematics / Applied':                            ['mathematics applied'],
-            'math':                                             ['mathematics'],
-            'math.':                                            ['mathematics'],
+            'youth/youths/youthful':                            ['youth', 'youths', 'youthful'],
+            'direct/ indirect':                                 ['direct', 'indirect'],
             'Math.':                                            ['mathematics'],
             }
 
@@ -88,7 +88,7 @@ def tag_rename(tag):
     # Remove multiple spaces
     new_tags = re.sub(r' +',  ' ', new_tags)
     # Split them!
-    new_tags = re.split(r' and | / | - | -- | \(| \| | , |, | & | : ', new_tags)
+    new_tags = re.split(r' and | / |/| - | -- | – |- | \(| \|. | , |, | & | : |: |; ', new_tags)
 
     new_tags = list(set(new_tags))
 
