@@ -228,4 +228,4 @@ if __name__ == '__main__':
         print(f"We had a issue adding the tags to:\n\n{failed_to_add}\n\nPlease check.")
         sys.exit()
 
-    print("Everything went amazing! You can sync your Zotero for hapiness")
+    print("Everything worked! You can sync your Zotero now")
