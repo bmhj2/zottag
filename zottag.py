@@ -88,7 +88,7 @@ def tag_rename(tag):
     # Remove multiple spaces
     new_tags = re.sub(r' +',  ' ', new_tags)
     # Split them!
-    new_tags = re.split(r' and | / | - | -- | – |- | \(| \|. | , |, | : |: |; ', new_tags)
+    new_tags = re.split(r' and | / |/ | - | -- |--| – |- | \(| \|. | , |, | : |: |; ', new_tags)
 
     new_tags = list(set(new_tags))
 
